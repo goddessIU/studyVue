@@ -4,8 +4,6 @@
     v-for="todo in todos"
     v-bind:key="todo.id"
     :todo="todo"
-    :storeChecked="storeChecked"
-    :deleteTodo="deleteTodo"
     />
   </ul>
 </template>
@@ -15,7 +13,7 @@ import MyItem from "./MyItem.vue";
 export default {
   name: "MyList",
   components: { MyItem },
-  props: ["todos",'storeChecked','deleteTodo'],
+  props: ["todos"],
 };
 </script>
 
